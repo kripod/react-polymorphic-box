@@ -1,0 +1,4 @@
+*.log*
+.eslintcache
+node_modules/
+pkg/

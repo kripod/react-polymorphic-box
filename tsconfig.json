@@ -1,0 +1,12 @@
+{
+  "include": ["src/"],
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react"
+  }
+}
