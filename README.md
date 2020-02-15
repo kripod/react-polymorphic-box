@@ -7,7 +7,7 @@ Building blocks for strongly typed polymorphic components in React.
 [![Travis (.com)](https://img.shields.io/travis/com/kripod/react-polymorphic-box)](https://travis-ci.com/kripod/react-polymorphic-box)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://commitizen.github.io/cz-cli/)
 
-<img src="./assets/demo.gif" alt="Animated demonstration of package capabilities" width="706" height="272" style="height: auto">
+<img src="./assets/demo.gif" alt="Animated demonstration of package capabilities" width="706">
 
 ## 💡 Motivation
 
