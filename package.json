@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Building blocks for strongly typed polymorphic components in React.",
   "keywords": [
-    "component",
-    "polymorphic",
     "react",
-    "typed"
+    "polymorphism",
+    "typescript",
+    "component"
   ],
   "homepage": "https://github.com/kripod/react-polymorphic-box#readme",
   "bugs": {
