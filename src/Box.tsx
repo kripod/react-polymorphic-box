@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { PropsOf } from './utils.d';
+import { PropsOf } from './utils';
 
 export interface BoxOwnProps<E extends React.ElementType = React.ElementType> {
   as?: E;
