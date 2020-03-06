@@ -52,16 +52,15 @@ export type HeadingProps<
   E extends React.ElementType
 > = PolymorphicComponentProps<E, HeadingOwnProps>;
 
-// An HTML tag or a different React component can be rendered by default
-const defaultElement = 'h2';
-
 export function Heading<E extends React.ElementType = typeof defaultElement>({
+  // An HTML tag or a different React component can be rendered by default
+  as = 'h2',
   color,
   style,
   ...restProps
 }: HeadingProps<E>): JSX.Element {
   // The `as` prop may be overridden by the passed props
-  return <Box as={defaultElement} style={{ color, ...style }} {...restProps} />;
+  return <Box as={as} style={{ color, ...style }} {...restProps} />;
 }
 ```
 
