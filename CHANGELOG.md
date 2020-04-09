@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/kripod/react-polymorphic-box/compare/v1.0.4...v1.1.0) (2020-04-09)
+
+### Features
+
+- `polymorphicComponent` type ([81cbb91](https://github.com/kripod/react-polymorphic-box/commit/81cbb91bcac54a8321582074069f365ac1ff3312))
+
 ### [1.0.4](https://github.com/kripod/react-polymorphic-box/compare/v1.0.3...v1.0.4) (2020-02-15)
 
 ### Bug Fixes
