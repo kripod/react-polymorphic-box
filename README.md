@@ -65,6 +65,32 @@ export function Heading<E extends React.ElementType = typeof defaultElement>({
 }
 ```
 
+### Typing External Components
+
+Alternatively, you can also type your custom components by using the `PolymorphicComponent` type. This is especially handy when working with external libraries that already expose polymorphic components. Here's an example implementing the Heading component from above using [styled-components](https://styled-components.com):
+
+```tsx
+import styled from 'styled-components';
+import { PolymorphicComponent } from 'react-polymorphic-box';
+
+// Component-specific props
+type HeadingProps = {
+  color?: string;
+};
+
+// An HTML tag or a different React component can be rendered by default
+const defaultElement = 'h2';
+
+const Heading: PolymorphicComponent<
+  // Component props, will automatically get merged with props from the element type
+  HeadingProps,
+  // The default element type. Optional, defaults to 'div'
+  typeof defaultElement
+> = styled(defaultElement)<HeadingProps>`
+  color: ${props => props.color};
+`;
+```
+
 ### Forwarding Refs
 
 Library authors should consider encapsulating reusable components, [passing a ref](https://reactjs.org/docs/forwarding-refs.html) through each of them:
