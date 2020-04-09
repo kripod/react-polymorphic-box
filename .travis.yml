@@ -9,8 +9,7 @@ script:
 
 deploy:
   - provider: npm
-    edge:
-      branch: master
+    edge: true
     run_script: publish
     on:
       tags: true
