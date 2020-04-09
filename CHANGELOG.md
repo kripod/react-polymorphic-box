@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-- `polymorphicComponent` type ([81cbb91](https://github.com/kripod/react-polymorphic-box/commit/81cbb91bcac54a8321582074069f365ac1ff3312))
+- `PolymorphicComponent` type ([81cbb91](https://github.com/kripod/react-polymorphic-box/commit/81cbb91bcac54a8321582074069f365ac1ff3312))
 
 ### [1.0.4](https://github.com/kripod/react-polymorphic-box/compare/v1.0.3...v1.0.4) (2020-02-15)
 
