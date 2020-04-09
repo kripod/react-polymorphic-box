@@ -85,7 +85,7 @@ const Heading: PolymorphicComponent<
   HeadingProps, // Merged with props from the underlying element type
   typeof defaultElement // Default element type (optional, defaults to 'div')
 > = styled(defaultElement)<HeadingProps>`
-  color: ${props => props.color};
+  color: ${(props) => props.color};
 `;
 ```
 
