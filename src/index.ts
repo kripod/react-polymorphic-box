@@ -1,7 +1,7 @@
 import { BoxProps } from './Box';
 
 export { Box } from './Box';
-export { PropsOf } from './utils';
+export type { PropsOf } from './utils';
 
 export type PolymorphicComponentProps<E extends React.ElementType, P> = P &
   BoxProps<E>;
