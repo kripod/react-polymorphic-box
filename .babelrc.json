@@ -2,6 +2,6 @@
   "presets": [
     "@babel/typescript",
     "@babel/react",
-    ["@babel/env", { "bugfixes": true, "loose": true }]
+    ["@babel/env", { "targets": "defaults", "bugfixes": true, "loose": true }]
   ]
 }
