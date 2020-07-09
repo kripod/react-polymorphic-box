@@ -1,16 +1,16 @@
 language: node_js
 node_js:
-  - lts/*
-  - node
+  - 10
+  - 12
+  - 14
 
 script:
-  - npm run lint
   - npm run build
+  - npm run lint
 
 deploy:
   - provider: npm
     edge: true
-    run_script: publish
     on:
       tags: true
-      node_js: lts/*
+      node_js: 12
