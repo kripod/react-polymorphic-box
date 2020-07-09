@@ -7,6 +7,7 @@ node_js:
 script:
   - npm run build
   - npm run lint
+  - npm run format -- --check --write false
 
 deploy:
   - provider: npm
