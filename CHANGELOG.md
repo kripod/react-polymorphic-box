@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.3](https://github.com/kripod/react-polymorphic-box/compare/v2.0.2...v2.0.3) (2020-07-09)
+
+### Bug Fixes
+
+- module typings path ([4dce4de](https://github.com/kripod/react-polymorphic-box/commit/4dce4de84d6a74bf4520e1fd4a2d83b7c5b6002f))
+
 ### [2.0.2](https://github.com/kripod/react-polymorphic-box/compare/v2.0.1...v2.0.2) (2020-07-09)
 
 ### Bug Fixes
