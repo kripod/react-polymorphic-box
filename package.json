@@ -21,7 +21,7 @@
     "commit": "git-cz",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,js,json,yml,md}\"",
     "lint": "eslint --ignore-path .gitignore \"**/*.{ts,tsx,js}\"",
-    "publish": "cd ./pkg/ && yarn publish --non-interactive",
+    "publish": "cd ./pkg/ && npm publish",
     "release": "standard-version",
     "type-check": "tsc --noEmit",
     "version": "npm run build"

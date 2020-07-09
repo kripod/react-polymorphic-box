@@ -4,8 +4,8 @@ node_js:
   - node
 
 script:
-  - yarn lint
-  - yarn build
+  - npm run lint
+  - npm run build
 
 deploy:
   - provider: npm

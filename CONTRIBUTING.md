@@ -17,20 +17,19 @@ Please keep the scope of each pull request to **one** specific feature or fix.
 ### Prequisites
 
 - [Node.js](https://nodejs.org/) >=10
-- [Yarn](https://yarnpkg.com/) >=1
 
 ### Workflow
 
 0. Assign related [issues] to yourself
-1. Clone a fork of the `master` branch and install all the required dependencies with `yarn`
+1. Clone a fork of the `master` branch and install all the required dependencies with `npm install`
 1. Make changes to the codebase
 1. Before pushing, fix any errors possibly emitted by the following commands:
 
-   - `yarn format` fixes stylistic issues using [Prettier]
-   - `yarn lint` enforces coding rules based on the [Airbnb JavaScript Style Guide]
-   - `yarn type-check` checks for errors in TypeScript code
+   - `npm run format` fixes stylistic issues using [Prettier]
+   - `npm run lint` enforces coding rules based on the [Airbnb JavaScript Style Guide]
+   - `npm run type-check` checks for errors in TypeScript code
 
-1. Record your changes with `yarn commit`, adhering to the [Conventional Commits] specification
+1. Record your changes with `npm run commit`, adhering to the [Conventional Commits] specification
 1. Open a new pull request, [referencing corresponding issues] if available
 
 ## License
