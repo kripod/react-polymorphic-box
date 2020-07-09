@@ -1,6 +1,6 @@
 {
 	"name": "react-polymorphic-box",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "Building blocks for strongly typed polymorphic components in React.",
 	"keywords": [
 		"react",
