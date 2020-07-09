@@ -1,0 +1,7 @@
+{
+  "presets": [
+    "@babel/typescript",
+    "@babel/react",
+    ["@babel/env", { "bugfixes": true, "loose": true }]
+  ]
+}

@@ -1,4 +1,4 @@
 *.log*
 .eslintcache
+dist/
 node_modules/
-pkg/
