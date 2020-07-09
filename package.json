@@ -22,7 +22,7 @@
 	},
 	"main": "./dist/cjs/bundle.min.js",
 	"module": "./dist/esm/bundle.min.mjs",
-	"types": "./dist/esm/bundle.d.ts",
+	"types": "./dist/esm/bundle.min.d.ts",
 	"files": [
 		"dist/",
 		"src/"
