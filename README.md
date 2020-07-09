@@ -39,8 +39,8 @@ A `Heading` component can demonstrate the effectiveness of polymorphism:
 Custom components like the previous one may utilize the package as shown below.
 
 ```tsx
-import * as React from 'react';
-import { Box, PolymorphicComponentProps } from 'react-polymorphic-box';
+import * as React from "react";
+import { Box, PolymorphicComponentProps } from "react-polymorphic-box";
 
 // Component-specific props should be specified separately
 export interface HeadingOwnProps {
@@ -53,7 +53,7 @@ export type HeadingProps<
 > = PolymorphicComponentProps<E, HeadingOwnProps>;
 
 // An HTML tag or a different React component can be rendered by default
-const defaultElement = 'h2';
+const defaultElement = "h2";
 
 export function Heading<E extends React.ElementType = typeof defaultElement>({
   color,
@@ -70,8 +70,8 @@ export function Heading<E extends React.ElementType = typeof defaultElement>({
 Alternatively, you can also type your custom components by using the `PolymorphicComponent` type. This is especially handy when working with external libraries that already expose polymorphic components. Here's an example implementing the Heading component from above using [styled-components](https://styled-components.com):
 
 ```tsx
-import { PolymorphicComponent } from 'react-polymorphic-box';
-import styled from 'styled-components';
+import { PolymorphicComponent } from "react-polymorphic-box";
+import styled from "styled-components";
 
 // Component-specific props
 interface HeadingProps {
@@ -79,7 +79,7 @@ interface HeadingProps {
 }
 
 // An HTML tag or a different React component can be rendered by default
-const defaultElement = 'h2';
+const defaultElement = "h2";
 
 const Heading: PolymorphicComponent<
   HeadingProps, // Merged with props from the underlying element type
@@ -94,13 +94,13 @@ const Heading: PolymorphicComponent<
 Library authors should consider encapsulating reusable components, [passing a ref](https://reactjs.org/docs/forwarding-refs.html) through each of them:
 
 ```tsx
-import * as React from 'react';
-import { Box } from 'react-polymorphic-box';
+import * as React from "react";
+import { Box } from "react-polymorphic-box";
 
 export const Heading = React.forwardRef(
   <E extends React.ElementType = typeof defaultElement>(
     { ref, color, style, ...restProps }: HeadingProps<E>,
-    innerRef: typeof ref,
+    innerRef: typeof ref
   ) => {
     return (
       <Box
@@ -110,8 +110,8 @@ export const Heading = React.forwardRef(
         {...restProps}
       />
     );
-  },
+  }
 ) as <E extends React.ElementType = typeof defaultElement>(
-  props: HeadingProps<E>,
+  props: HeadingProps<E>
 ) => JSX.Element;
 ```
