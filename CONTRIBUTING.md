@@ -21,7 +21,7 @@ Please keep the scope of each pull request to **one** specific feature or fix.
 ### Workflow
 
 0. Assign related [issues] to yourself
-1. Clone a fork of the `master` branch and install all the required dependencies with `npm install`
+1. Clone a fork of the `main` branch and install all the required dependencies with `npm install`
 1. Make changes to the codebase
 1. Before pushing, fix any errors possibly emitted by the following commands:
 
