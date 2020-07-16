@@ -115,3 +115,14 @@ export const Heading = React.forwardRef(
   props: HeadingProps<E>
 ) => JSX.Element;
 ```
+
+The component can then receive a `ref` prop _([live demo](https://codesandbox.io/s/react-polymorphic-box-forwarding-refs-2l81h)),_ just like a regular HTML element:
+
+```tsx
+import { useRef } from "react";
+
+function App() {
+  const ref = useRef<HTMLHeadingElement>(null);
+  return <Heading ref={ref}>It works!</Heading>;
+}
+```
