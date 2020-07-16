@@ -97,15 +97,15 @@ import { Box } from "react-polymorphic-box";
 
 export const Heading = React.forwardRef(
   <E extends React.ElementType = typeof defaultElement>(
-    { ref, color, style, ...restProps }: HeadingProps<E>,
-    innerRef: typeof ref
+    { color, style, ...restProps }: HeadingProps<E>,
+    innerRef: typeof restProps.ref
   ) => {
     return (
       <Box
-        ref={innerRef}
         as={defaultElement}
         style={{ color, ...style }}
         {...restProps}
+        ref={innerRef}
       />
     );
   }
