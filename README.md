@@ -39,7 +39,6 @@ A `Heading` component can demonstrate the effectiveness of polymorphism:
 Custom components like the previous one may utilize the package as shown below.
 
 ```tsx
-import * as React from "react";
 import { Box, PolymorphicComponentProps } from "react-polymorphic-box";
 
 // Component-specific props should be specified separately
@@ -94,7 +93,6 @@ const Heading: PolymorphicComponent<
 Library authors should consider encapsulating reusable components, [passing a ref](https://reactjs.org/docs/forwarding-refs.html) through each of them:
 
 ```tsx
-import * as React from "react";
 import { Box } from "react-polymorphic-box";
 
 export const Heading = React.forwardRef(
