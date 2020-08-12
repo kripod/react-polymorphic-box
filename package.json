@@ -29,6 +29,7 @@
 	],
 	"scripts": {
 		"build": "rollup --config --sourcemap",
+		"clean": "git clean -fdx -e node_modules",
 		"commit": "git-cz",
 		"format": "prettier --ignore-path .gitignore --write .",
 		"lint": "eslint --ignore-path .gitignore \"**/*.{ts,tsx,js}\"",
