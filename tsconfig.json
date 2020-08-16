@@ -4,6 +4,7 @@
 		"target": "ESNext",
 		"module": "ESNext",
 		"moduleResolution": "Node",
+		"esModuleInterop": true,
 		"isolatedModules": true,
 		"jsx": "react",
 		"declaration": true,
