@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.7](https://github.com/kripod/react-polymorphic-box/compare/v2.0.6...v2.0.7) (2020-08-16)
+
+### Bug Fixes
+
+- importing React as a library ([87dc14f](https://github.com/kripod/react-polymorphic-box/commit/87dc14ff168260a49926df164319d64fb219e67a))
+
 ### [2.0.6](https://github.com/kripod/react-polymorphic-box/compare/v2.0.5...v2.0.6) (2020-08-12)
 
 ### Bug Fixes
