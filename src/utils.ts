@@ -1,5 +1,9 @@
-// Source: https://github.com/emotion-js/emotion/blob/master/packages/styled-base/types/helper.d.ts
-export type PropsOf<
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	E extends keyof JSX.IntrinsicElements | React.JSXElementConstructor<any>
-> = JSX.LibraryManagedAttributes<E, React.ComponentPropsWithRef<E>>;
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// Source: https://github.com/chakra-ui/chakra-ui/blob/develop/packages/system/src/forward-ref.tsx
+type As = string | React.ComponentType<any>;
+
+export type PropsOf<T extends As> = T extends keyof JSX.IntrinsicElements
+	? JSX.IntrinsicElements[T]
+	: T extends React.JSXElementConstructor<any>
+	? JSX.LibraryManagedAttributes<T, React.ComponentPropsWithRef<T>>
+	: never;
