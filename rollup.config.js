@@ -1,5 +1,4 @@
 import ts from "@wessberg/rollup-plugin-ts";
-import { terser } from "rollup-plugin-terser";
 
 import pkg from "./package.json";
 
@@ -13,9 +12,8 @@ export default {
 		{
 			file: pkg.exports.require,
 			format: "cjs",
-			externalLiveBindings: false,
 		},
 	],
-	plugins: [ts({ transpiler: "babel" }), terser()],
+	plugins: [ts()],
 	external: ["react"],
 };

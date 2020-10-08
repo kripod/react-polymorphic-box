@@ -1,7 +1,0 @@
-{
-	"presets": [
-		"@babel/typescript",
-		"@babel/react",
-		["@babel/env", { "targets": "defaults", "bugfixes": true, "loose": true }]
-	]
-}
