@@ -1,8 +1,8 @@
 import React from "react";
 
-export interface BoxOwnProps<E extends React.ElementType = React.ElementType> {
+export type BoxOwnProps<E extends React.ElementType = React.ElementType> = {
 	as?: E;
-}
+};
 
 export type BoxProps<E extends React.ElementType> = BoxOwnProps<E> &
 	Omit<React.ComponentPropsWithRef<E>, keyof BoxOwnProps>;

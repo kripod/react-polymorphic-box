@@ -42,9 +42,9 @@ Custom components like the previous one may utilize the package as shown below.
 import { Box, PolymorphicComponentProps } from "react-polymorphic-box";
 
 // Component-specific props should be specified separately
-export interface HeadingOwnProps {
+export type HeadingOwnProps = {
   color?: string;
-}
+};
 
 // Merge own props with others inherited from the underlying element type
 export type HeadingProps<
@@ -73,9 +73,9 @@ import { PolymorphicComponent } from "react-polymorphic-box";
 import styled from "styled-components";
 
 // Component-specific props
-interface HeadingProps {
+type HeadingProps = {
   color?: string;
-}
+};
 
 // An HTML tag or a different React component can be rendered by default
 const defaultElement = "h2";
