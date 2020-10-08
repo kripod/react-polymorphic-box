@@ -95,7 +95,9 @@ Library authors should consider encapsulating reusable components, [passing a re
 ```tsx
 import { Box } from "react-polymorphic-box";
 
-export const Heading = React.forwardRef(
+export const Heading: <E extends React.ElementType = typeof defaultElement>(
+  props: HeadingProps<E>
+) => React.ReactElement | null = React.forwardRef(
   <E extends React.ElementType = typeof defaultElement>(
     { color, style, ...restProps }: HeadingProps<E>,
     innerRef: typeof restProps.ref
@@ -109,9 +111,7 @@ export const Heading = React.forwardRef(
       />
     );
   }
-) as <E extends React.ElementType = typeof defaultElement>(
-  props: HeadingProps<E>
-) => React.ReactElement | null;
+);
 ```
 
 The component can then receive a `ref` prop _([live demo](https://codesandbox.io/s/react-polymorphic-box-forwarding-refs-2l81h)),_ just like a regular HTML element:
