@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/kripod/react-polymorphic-box/compare/v2.0.7...v3.0.0) (2020-10-08)
+
+### Features
+
+- tree shaking possibility for React ([533b7aa](https://github.com/kripod/react-polymorphic-box/commit/533b7aad7d886dd3c827439795cece0d4a9f4719))
+
+### Bug Fixes
+
+- component display name for debugging ([33d6461](https://github.com/kripod/react-polymorphic-box/commit/33d6461f31a3c06e5e8bf78cd210d84dbe0b662f))
+- element return types ([841ca5e](https://github.com/kripod/react-polymorphic-box/commit/841ca5ec78ea4b9a180ea4e9efaf3ca386efb4ad))
+
 ### [2.0.7](https://github.com/kripod/react-polymorphic-box/compare/v2.0.6...v2.0.7) (2020-08-16)
 
 ### Bug Fixes
