@@ -111,7 +111,7 @@ export const Heading = React.forwardRef(
   }
 ) as <E extends React.ElementType = typeof defaultElement>(
   props: HeadingProps<E>
-) => React.ReactElement;
+) => React.ReactElement | null;
 ```
 
 The component can then receive a `ref` prop _([live demo](https://codesandbox.io/s/react-polymorphic-box-forwarding-refs-2l81h)),_ just like a regular HTML element:

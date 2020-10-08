@@ -9,12 +9,12 @@ export type BoxProps<E extends React.ElementType> = BoxOwnProps<E> &
 
 const defaultElement = "div";
 
-export const Box = React.forwardRef(function Box(
+export const Box: <E extends React.ElementType = typeof defaultElement>(
+	props: BoxProps<E>,
+) => React.ReactElement | null = React.forwardRef(function Box(
 	props: BoxOwnProps,
 	ref: React.Ref<Element>,
 ) {
 	const Element = props.as || defaultElement;
 	return <Element ref={ref} {...props} as={undefined} />;
-}) as <E extends React.ElementType = typeof defaultElement>(
-	props: BoxProps<E>,
-) => React.ReactElement;
+});
