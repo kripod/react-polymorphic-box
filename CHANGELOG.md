@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/kripod/react-polymorphic-box/compare/v3.0.0...v3.0.1) (2020-10-09)
+
+### Performance
+
+- improve prop inference ([137fca6](https://github.com/kripod/react-polymorphic-box/commit/137fca651080fc4ce1e4788639ec684db32bb617))
+
+### Documentation
+
+- add missing 'export' statements ([3c10d78](https://github.com/kripod/react-polymorphic-box/commit/3c10d78be640cf1c51b09a239a4c54ac840e760c))
+
 ## [3.0.0](https://github.com/kripod/react-polymorphic-box/compare/v2.0.7...v3.0.0) (2020-10-08)
 
 ### Features
