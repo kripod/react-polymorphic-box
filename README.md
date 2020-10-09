@@ -73,14 +73,14 @@ import { PolymorphicComponent } from "react-polymorphic-box";
 import styled from "styled-components";
 
 // Component-specific props
-type HeadingProps = {
+export type HeadingProps = {
   color?: string;
 };
 
 // An HTML tag or a different React component can be rendered by default
 const defaultElement = "h2";
 
-const Heading: PolymorphicComponent<
+export const Heading: PolymorphicComponent<
   HeadingProps, // Merged with props from the underlying element type
   typeof defaultElement // Default element type (optional, defaults to 'div')
 > = styled(defaultElement)<HeadingProps>`
