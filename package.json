@@ -17,11 +17,11 @@
 	"author": "Kristóf Poduszló <kripod@protonmail.com>",
 	"sideEffects": false,
 	"exports": {
-		"import": "./dist/esm/bundle.min.mjs",
+		"import": "./dist/esm/bundle.min.js",
 		"require": "./dist/cjs/bundle.min.js"
 	},
 	"main": "./dist/cjs/bundle.min.js",
-	"module": "./dist/esm/bundle.min.mjs",
+	"module": "./dist/esm/bundle.min.js",
 	"types": "./dist/cjs/bundle.min.d.ts",
 	"files": [
 		"dist/",
