@@ -100,14 +100,14 @@ export const Heading: <E extends React.ElementType = typeof defaultElement>(
 ) => React.ReactElement | null = React.forwardRef(
   <E extends React.ElementType = typeof defaultElement>(
     { color, style, ...restProps }: HeadingProps<E>,
-    innerRef: typeof restProps.ref
+    ref: typeof restProps.ref
   ) => {
     return (
       <Box
         as={defaultElement}
+        ref={ref}
         style={{ color, ...style }}
         {...restProps}
-        ref={innerRef}
       />
     );
   }
