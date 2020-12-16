@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.3](https://github.com/kripod/react-polymorphic-box/compare/v3.0.2...v3.0.3) (2020-12-16)
+
+### Chores
+
+- loosen range of peerDependencies ([b7b3194](https://github.com/kripod/react-polymorphic-box/commit/b7b31948d6dae16274a43ac9a4f0237c6ab9068b)), closes [#21](https://github.com/kripod/react-polymorphic-box/issues/21)
+
 ### [3.0.2](https://github.com/kripod/react-polymorphic-box/compare/v3.0.0...v3.0.2) (2020-11-01)
 
 ### Bug Fixes
